@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @post.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @post.body %>
+</p>
+
+<p>
+  <b>Published at:</b>
+  <%= @post.published_at %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @post.author %>
+</p>
+
+<p>
+  <b>Featured:</b>
+  <%= @post.featured %>
+</p>
+  <h3> Comments (<%= @post.comments.count %>) </h3>
+  <%= render 'posts/comment_form' %>
+  <% @post.comments.each do |comment| %>
+  <%= comment.author %>
+  <small> <%= comment.created_At.strftime("") %> </small>
+<%= simple_format(comment.message) %>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

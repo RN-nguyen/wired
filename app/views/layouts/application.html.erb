@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+    <section id= "content">
+      <h1> </h1>
+    <%= render "layouts/navigation" %>
+    <%= yield %>
+    <section>
+</body>
+
+
+<footer>
+    <p> &copy; <%= Time.now.year %> Rebecca Nguyen </p>
+</footer>
+
+</html>
