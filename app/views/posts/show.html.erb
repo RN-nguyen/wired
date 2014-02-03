@@ -24,6 +24,7 @@
   <b>Featured:</b>
   <%= @post.featured %>
 </p>
+
   <h3> Comments (<%= @post.comments.count %>) </h3>
   <%= render 'posts/comment_form' %>
   <% @post.comments.each do |comment| %>

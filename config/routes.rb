@@ -2,10 +2,11 @@ Portfolio::Application.routes.draw do
  
   #get | put | patch | delete | post
  
-  resources :posts
+  resources :posts do
+    post 'comments', to: "posts#create_comment", as: :comments
+  end
 
   root to: "static_pages#home"
-
   get "home", to: "static_pages#home", as: :home
   get "about", to: "static_pages#about", as: :about
   get "gallery", to: "static_pages#gallery", as: :gallery

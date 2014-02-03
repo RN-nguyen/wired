@@ -12,7 +12,9 @@ gem 'sqlite3'
 group :development do
   gem "binding_of_caller"
   gem "better_errors"
-  gem 'pry-rails'
+  gem "pry-rails"
+  gem "meta_request"
+  gem 'xray-rails'
 end
 
 # Gems used only for assets and not required
