@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
   
   def home
-    @post = Post.where(featured: true). first
+    # @post = Post.where(featured: true). first
     
   end
 
@@ -9,7 +9,7 @@ class StaticPagesController < ApplicationController
     
   end
 
-  def gallery
+  def project
 
   end
 end

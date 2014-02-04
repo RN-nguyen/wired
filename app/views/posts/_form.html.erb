@@ -1,29 +1,36 @@
-<%= form_for(@comment url: /posts/:post_id/comments((@comment)) do |f| %>
-  <% if @comment.errors.any? %>
+<%= form_for(@post) do |f| %>
+  <% if @post.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this post from being saved:</h2>
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
 
-      <ul>
-      <% @comment.errors.full_messages.each do |msg| %>
+      
+      <% @post.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
-      </ul>
     </div>
   <% end %>
 
-    
   <div class="field">
-    <%= f.label :author %><br />
-    <%= f.text_field :author %>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %> 
+   </div>
+  <div class="field">
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
   </div>
   <div class="field">
     <%= f.label :published_at %><br />
     <%= f.datetime_select :published_at %>
+  </div> 
+ <!--  <%#= @post.published_at.strftime(("Published on %m/%d/%Y")) %> -->
+ <!--  <div class="field">
+    <%#= f.label :author %><br />
+    <%#= f.text_field :author %>
   </div>
   <div class="field">
-    <%= f.label :message %><br />
-    <%= f.text_area :message %>
-  </div>
+    <%#= f.label :featured %><br />
+    <%#= f.text_field :featured %>
+  </div> -->
   <div class="actions">
     <%= f.submit %>
   </div>

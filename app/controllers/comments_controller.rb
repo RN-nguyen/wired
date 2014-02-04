@@ -1,4 +1,4 @@
- jjclass CommentsController < ApplicationController
+class CommentsController < ApplicationController
 
  def show
     @post = Post.find(params[:id])

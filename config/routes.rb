@@ -9,7 +9,7 @@ Portfolio::Application.routes.draw do
   root to: "static_pages#home"
   get "home", to: "static_pages#home", as: :home
   get "about", to: "static_pages#about", as: :about
-  get "gallery", to: "static_pages#gallery", as: :gallery
+  get "project", to: "static_pages#project", as: :project
  
 
 
