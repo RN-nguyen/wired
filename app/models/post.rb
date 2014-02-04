@@ -13,7 +13,7 @@ class Post < ActiveRecord::Base
             uniqueness: true
   #validate :published_at_is_in_the_future, on: :create
 
-  #private
+#private
 
  #  def validates_published_at_is_in_the_future
  #     errors.add(:published_at, "Published at must be in the future") unless published_at >= Time.now
