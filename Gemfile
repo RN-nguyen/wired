@@ -6,8 +6,9 @@ gem 'rails', '3.2.16'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #gem 'sqlite3'
-gem "sqlite3", group: :development, group: :test
-gem "pg", group: :production
+# gem "sqlite3", group: :development, group: :test
+gem "pg"  
+# , group: :production
 
 
 
@@ -31,6 +32,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+ruby '2.0.0'
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
