@@ -3,19 +3,19 @@ development:
   encoding: unicode
   database: nguyen-wired_development
   pool: 5
-  username: Rebecca Nguyen
+  username: rebeccanguyen
   password: 
 test:
   adapter: postgresql
   encoding: unicode
   database: nguyen-wired_test
   pool: 5
-  username: Rebecca Nguyen
+  username: rebeccanguyen
   password:
 production:
   adapter: postgresql
   encoding: unicode
   database: nguyen-wired_production
   pool: 5
-  username: Rebecca Nguyen
+  username: rebeccanguyen
   password:
