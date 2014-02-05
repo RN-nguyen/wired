@@ -5,7 +5,7 @@ class CreatePosts < ActiveRecord::Migration
       t.text :body
       t.datetime :published_at
       t.string :author
-      t.boolean :featured, default :false
+      t.boolean :featured, default: false
 
       t.timestamps
     end
