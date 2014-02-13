@@ -1,13 +1,14 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-// .field {
-//   color: #3a5063;
-//   font-family: helvetica, verdana, arial, sans-serif;
-//   font-size: 13px;
-//   line-height: 17px;
-//   padding: 40px 40px;
-//   margin: 15px 15px
 
-// }
-
+a {
+  color: #102d7e;
+  &:visited {
+    color: #55a3a3;
+  }
+  &:hover {
+    color: #4b89d0;
+    
+  }
+}

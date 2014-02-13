@@ -1,8 +1,10 @@
 class StaticPagesController < ApplicationController
   
   def home
-    # @post = Post.where(featured: true). first
-    
+   @post = Post.featured
+   @post = Post.featured.first
+  end
+
   end
 
   def about
@@ -12,4 +14,6 @@ class StaticPagesController < ApplicationController
   def project
 
   end
+
+
 end

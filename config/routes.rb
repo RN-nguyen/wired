@@ -1,12 +1,18 @@
 Portfolio::Application.routes.draw do
  
+  resources :users 
+
+  get "post", to: "posts#show", as: :post
+
   #get | put | patch | delete | post
  
   resources :posts do
+
     post 'comments', to: "posts#create_comment", as: :comments
   end
 
   root to: "static_pages#home"
+
   get "home", to: "static_pages#home", as: :home
   get "about", to: "static_pages#about", as: :about
   get "project", to: "static_pages#project", as: :project

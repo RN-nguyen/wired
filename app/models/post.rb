@@ -2,7 +2,7 @@ class Post < ActiveRecord::Base
   has_many :comments, dependent: :destroy
 
   scope :featured, -> { where(featured: true) }
-  scope  :ordere, -> {order( 'published_at DESC') }
+  scope  :ordered, -> {order( 'published_at DESC') }
   default_scope -> {where("published_at <= ? ", Time.now) .order ("published_at DESC")}
   attr_accessible :author, :body, :featured, :published_at, :title
   validates :title, :body, presence: true

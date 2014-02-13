@@ -16,3 +16,16 @@ footer p{
   padding: 0px 0px 0px 0px;
 }
 
+// $max: 255;
+// @for $i from 0 to $max{
+//   .rainbow#{$i} {
+//     position: absolute;
+//     $offset: (100% / $max) * $i;
+//     left:
+//     top:
+//     bottom:
+//     background: hsl($i, 100%, 50%);
+//   }
+
+// }
+
