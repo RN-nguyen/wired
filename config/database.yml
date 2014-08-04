@@ -1,21 +1,21 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: nguyen-wired_development
+  database: wired_development
   pool: 5
-  username: rebeccanguyen
+  username: Oanh
   password: 
 test:
   adapter: postgresql
   encoding: unicode
-  database: nguyen-wired_test
+  database: wired_test
   pool: 5
-  username: rebeccanguyen
+  username: Oanh
   password:
 production:
   adapter: postgresql
   encoding: unicode
-  database: nguyen-wired_production
+  database: wired_production
   pool: 5
-  username: rebeccanguyen
+  username: Oanh
   password:
